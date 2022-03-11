@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    font-size: 20px;
+    text-align: center;
+}
+
+#canvas {
+    background-color: rgb(243, 243, 243);
+    height: 600px;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.block {
+    width: 28px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+    transition: 0.2s all ease;
+}
+
+.block_label {
+    position: absolute;
+    color: black;
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+}
