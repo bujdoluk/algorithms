@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+}
+
 .header {
     font-size: 20px;
     text-align: center;
@@ -15,11 +20,28 @@
     background-color: rgb(243, 243, 243);
     height: 600px;
     width: 800px;
-    margin: 0 auto;
+    margin: 50px auto;
     position: relative;
 }
 
-.block {
+.buttons {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
+
+.bar {
     width: 28px;
     background-color: blue;
     position: absolute;
@@ -27,7 +49,7 @@
     transition: 0.2s all ease;
 }
 
-.block_label {
+.bar_label {
     position: absolute;
     color: black;
     margin-top: -20px;
